@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="card">
+        <div class="card-header">Sum Calculator</div>
+        <div class="card-body">
+          <div class="alert alert-danger" id="error" style="display: none">
+            Invalid Input
+          </div>
+          <div id="output" class="alert"></div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="first"
+              placeholder="Enter First Number"
+            />
+          </div>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control"
+              id="second"
+              placeholder="Enter Second Number"
+            />
+          </div>
+
+          <div class="mb-1">
+            <button onclick="calculateSum();" class="btn btn-primary" id="btn">
+              Calculate Sum
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
